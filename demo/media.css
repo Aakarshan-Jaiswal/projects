@@ -1,0 +1,19 @@
+
+@media only screen and (max-width:600px){
+    body{
+        font-size: 14px;
+    }
+    :root{
+        --height-size: .8vh;
+        --height:1.25;
+    }
+}
+@media only screen and (max-width:350px){
+    body{
+        font-size: 10px;
+    }
+    :root{
+        --height-size: .7vh;
+        --height:1.5;
+    }
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: crimson;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card {
+    height: 385px;
+    width: 260px;
+    position: relative;
+    margin: 10px;
+    overflow-y: hidden;
+}
+
+.front,.back {
+    width: 260px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.front {
+    height: 385px;
+    background-color: white;
+    border: 5px solid darkslategray;
+    filter: none;
+    transition: filter 0.5s linear;
+}
+
+.card:hover > .front {
+    filter: blur(3px);
+}
+
+.back {
+    background-color: dimgrey;
+    color: beige;
+    border: 5px solid darkslategray;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s linear,
+                opacity 0.5s linear;
+    transform-origin: bottom;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.card:hover > .back {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card-img {
+    width: 250px;
+    height: 375px;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-content {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darksalmon;
+}
+
+.card-btn {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    color: darkslategray;
+    border: 3px solid darkslategray;
+    cursor: pointer;
+}

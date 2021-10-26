@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: crimson;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card {
+    height: 375px;
+    width: 250px;
+    position: relative;
+    margin: 10px;
+}
+
+.front,.back {
+    height: 385px;
+    width: 260px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.front {
+    background-color: white;
+    border: 5px solid darkslategray;
+    transition: transform 0.5s linear;
+    transform-origin: top;
+    transform: translateY(0px) rotateX(0deg);
+    
+}
+
+.card:hover > .front {
+    transform: translateY(-10px) rotateX(90deg);
+}
+
+.back {
+    background-color: dimgrey;
+    color: beige;
+    border: 5px solid darkslategray;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s linear;
+    transform-origin: bottom;
+    transform: translateY(0px) rotateX(-90deg);
+}
+
+.card:hover > .back {
+    transform: translateY(-10px) rotateX(0deg);
+}
+
+.card-img {
+    width: 250px;
+    height: 375px;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-content {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darksalmon;
+}
+
+.card-btn {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    color: darkslategray;
+    border: 3px solid darkslategray;
+}

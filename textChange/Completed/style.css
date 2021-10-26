@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.hero {
+    height: 80vh;
+    width: 100vw;
+    background: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+}
+
+.main-text {
+    position: absolute;
+    right:10%;
+    top: 30%;
+    text-align: right;
+}
+
+.title {
+    color: orange;
+    margin-bottom: 20px;
+    font-size: 300%;
+}
+
+.tagline {
+    color: wheat;
+    font-size: 150%;
+}

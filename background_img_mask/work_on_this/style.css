@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 22px;
+}
+
+/********* HTML ELEMENTS PROPERTIES ***********/
+
+
+
+/***** SPECIFIC ELEMENT / CHILD PROPERTIES ******/
+
+
+
+/********** REUSABLE CSS PROPERTIES **********/
+
+.hero{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/pizza_beer_1200x628.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1,1);
+    transition: transform linear 150ms,
+                transform linear 150ms;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 4px solid aqua ;
+    color: aqua;
+    padding: 30px 40px;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero:hover > .hero-img{
+    background: url(images/pizza_beer_1200x628.jpg);
+    transform: scale(1.25,1.25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/************* COLORS PROPERTIES *****************/
+
